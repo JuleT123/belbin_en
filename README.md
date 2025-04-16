@@ -1,3 +1,3 @@
 # Belbin Test
 
-Der [Belbin test](https://en.wikipedia.org/wiki/Belbin_Team_Inventory) ist ein Instrument zur Selbsteinschätzung der Teamrolle. [:arrow_right: **Zum Test**](https://nikku.github.io/belbin/).
+The [Belbin test](https://en.wikipedia.org/wiki/Belbin_Team_Inventory) is an instrument for self-assessment of the team role. [:arrow_right: **To the test**](https://nikku.github.io/belbin/).
