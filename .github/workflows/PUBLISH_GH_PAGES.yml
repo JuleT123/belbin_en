@@ -9,12 +9,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Upload
-      uses: actions/upload-pages-artifact@v1
-      with:
-        path: public
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: List build directory
+        run: ls -la ./public
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3 # Updated to v2
+        with:
+          path: ./public
 
   deploy:
     needs: build
@@ -31,4 +35,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
