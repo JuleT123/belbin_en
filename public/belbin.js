@@ -1,82 +1,82 @@
 (function() {
     var curArea = -1;
     var areas = [
-        {desc: "Welchen Beitrag glaube ich in einem Team leisten zu können?", statements: [
-            "Ich glaube, ich kann schnell neue Möglichkeiten erkennen und nutzen. ",
-            "Ich kann gut mit ganz unterschiedlichen Leuten zusammenarbeiten. ",
-            "Es liegt in meiner Natur, Ideen hervorzubringen. ",
-            "Es ist meine Stärke, jemanden aus der Reserve zu locken, wenn ich merke, dass er etwas Wertvolles für die Ziele der Gruppe beisteuern kann.",
-            "Man kann sich darauf verlassen das ich Dinge zuende bringe.",
-            "Meine technische Expertise ist meine große Stärke. ",
-            "Ich bin fähig, mich zeitweise unbeliebt zu machen, wenn das Endergebnis es wert ist. ",
-            "Ich habe normalerweise ein Gespür dafür, was realistisch ist und was klappen könnte. ",
-            "Ich kann vernünftige Alternativen vorschlagen, ohne Partei zu ergreifen oder eigene Vorurteile ins Spiel zu bringen. "
+        {desc: "What contribution do I think I can make in a team?", statements: [
+            "I think I can quickly identify and use new opportunities. ",
+            "I can work well with very different people. ",
+            "It's in my nature to come up with ideas. ",
+            "It is my strength to lure someone out of their reserve when I realise that they can contribute something valuable to the goals of the group. ",
+            "You can rely on me to finish things. ",
+            "My technical expertise is my great strength. ",
+            "I'm capable of making myself unpopular at times if the end result is worth it. ",
+            "I usually have a sense of what is realistic and what could work. ",
+            "I can suggest reasonable alternatives without taking sides or bringing my own prejudices into play. "
         ]},
-        {desc: "Wenn mir Teamarbeit möglicherweise nicht so liegt, kann das folgende Gründe haben:", statements: [
-            "Ich fühle mich nicht wohl, wenn Meetings nicht gut strukturiert, gesteuert und geleitet sind. ",
-            "Ich neige dazu, anderen gegenüber zu großzügig zu sein, wenn sie eine sinnvolle Ansicht vertreten, die noch nicht genügend beachtet wurde.",
-            "Ich bringe mich nur zögerlich ein wenn ich mich nicht als Experte sehe. ",
-            "Ich tendiere dazu, zuviel zu reden, wenn die Gruppe dabei ist, neue Ideen zu entwickeln.",
-            "Meine objektive Sichtweise macht es mir schwer, mich bereitwillig und mit Begeisterung den KollegInnen anzuschließen.",
-            "Ich erwecke manchmal den Eindruck, dominierend und autoritär zu sein, wenn etwas unbedingt erledigt werden muss. ",
-            "Es fällt mir vielleicht deshalb schwer die Leitung zu übernehmen, weil ich zu sehr von der Gruppenatmosphäre abhängig bin.",
-            "Ich verrenne mich häufig in eigene Ideen und verliere so den Anschluss an die Ereignisse. ",
-            "Ich zögere Vorschläge zu unterbreiten wenn diese noch nicht hinreichend detailiert sind. "
+        {desc: "If teamwork may not suit me, it may be for the following reasons:", statements: [
+            "I don't feel comfortable when meetings aren't well structured, managed, and managed. ",
+            "I tend to be too generous to others when they hold a meaningful view that has not yet been sufficiently considered. ",
+            "I am reluctant to get involved if I don't see myself as an expert. ",
+            "I tend to talk too much when the group is in the process of developing new ideas.",
+            "My objective point of view makes it difficult for me to join my colleagues willingly and enthusiastically. ",
+            "I sometimes give the impression of being domineering and authoritarian when something absolutely has to be done. ",
+            "Maybe it's hard for me to take over the leadership because I'm too dependent on the group atmosphere.",
+            "I often get caught up in my own ideas and thus lose touch with the events. ",
+            "I hesitate to make proposals if they are not yet sufficiently detailed. "
         ]},
-        {desc: "Wie verhalte ich mich, wenn ich mit anderen Leuten an einem Projekt beteiligt bin?", statements: [
-            "Ich besitze die Gabe, jemanden zu beeinflussen, ohne ihn unter Druck zu setzen. ",
-            "Meine ständige Wachsamkeit verhindert Leichtsinnsfehler und Versäumnisse. ",
-            "Ich bin bereit, die Dinge voranzutreiben, damit in einem Meeting keine Zeit vertrödelt und das eigentliche Ziel nicht aus dem Auge verloren wird. ",
-            "Man kann sich darauf verlassen, dass ich originelle Ideen habe. ",
-            "Ich bin immer bereit, gute Vorschläge zu unterstützen, wenn sie im allgemeinen Interesse sind. ",
-            "Ich bin immer begierig, die allerneuesten Ideen und Entwicklungen zu entdecken. ",
-            "Ich versuche mich in jeder Situation professionell zu verhalten. ",
-            "Ich glaube, dass mein Urteilsvermögen dazu beitragen kann, die richtigen Entscheidungen zu fällen. ",
-            "Man kann sich darauf verlassen, dass ich alle wichtigen Arbeiten systematisch in die Wege leite."
+        {desc: "'How do I behave when I'm involved in a project with other people?", statements: [
+            "I have the gift of influencing someone without putting them under pressure.",
+            "My constant vigilance prevents careless mistakes and omissions. ",
+            "I am willing to push things forward so that no time is wasted in a meeting and the actual goal is not lost sight of. ",
+            "You can rely on me to have original ideas.",
+            "I am always ready to support good proposals if they are in the general interest. ",
+            "I am always eager to discover the very latest ideas and developments. ",
+            "I try to behave professionally in every situation. ",
+            "I believe that my judgement can help me make the right decisions. ",
+            "You can rely on me to systematically initiate all important work."
         ]},
-        {desc: "Meine typische Einstellung zur Gruppenarbeit ist folgende:", statements: [
-            "Ich bin sehr daran interessiert, meine KollegInnen gut kennen zu lernen. ",
-            "Ich beteilige dort wo ich mich als Experte sehe. ",
-            "Ich zögere nicht, andere Meinungen anzuzweifeln oder eine eigene Meinung zu vertreten, auch wenn ich damit in der Minderheit bin. ",
-            "Normalerweise finde ich triftige Argumente, um nicht stichhaltige Vorschläge zu entkräften. ",
-            "Ich glaube, es liegt mir, beschlossene Pläne erfolgreich in die Tat umzusetzen. ",
-            "Ich neige dazu, über das ohnehin Offensichtliche hinwegzugehen und stattdessen das Unerwartete auf den Tisch zu bringen. ",
-            "Bei allem, was ich tue, neige ich zu Perfektionismus. ",
-            "Ich bin bereit, Kontakte außerhalb der Gruppe zu nutzen. ",
-            "Zwar bin ich an allen Ansichten interessiert, zögere aber nicht, mir eine eigene Meinung zu bilden, sobald eine Entscheidung gefällt werden muss."
+        {desc: "My typical attitude to group work is the following:", statements: [
+            "I am very interested in getting to know my colleagues well. ",
+            "I participate where I see myself as an expert. ",
+            "I do not hesitate to doubt other opinions or to represent my own opinion, even if I am in the minority. ",
+            "I usually find valid arguments to refute unfounded proposals. ",
+            "I think it suits me to successfully put decided plans into practice. ",
+            "I think it suits me to successfully put decided plans into practice. ",
+            "With everything I do, I tend to perfectionism. ",
+            "I am ready to use contacts outside the group. ",
+            "I am interested in all views, but do not hesitate to form my own opinion as soon as a decision has to be made."
         ]},
-        {desc: "Folgendes schafft mir Befriedigung bei der Arbeit:", statements: [
-            "Es macht mir Spaß, Situationen zu analysieren und alle Möglichkeiten abzuwägen. ",
-            "Ich bin daran interessiert, praktische Problemlösungen zu finden. ",
-            "Ich genieße das Gefühl, gute Arbeitsbeziehungen zu fördern. ",
-            "Ich kann Entscheidungen stark beeinflussen. ",
-            "Ich kann Leute treffen, die vielleicht etwas Neues einzubringen haben. ",
-            "Ich kann Leute dahin bringen, dass sie sich über die notwendigen Maßnahmen einigen. ",
-            "Ich fühle mich in meinem Element, wenn ich mich ganz auf eine Aufgabe konzentrieren kann. ",
-            "Ich suche mir gern Gebiete, bei denen meine Phantasie gefordert ist.",
-            "Ich kann meine besondere Qualifikation zu meinem Vorteil nutzen. "
+        {desc: "The following creates me at work:", statements: [
+            "I enjoy analyzing situations and weighing up all the options.",
+            "I am interested in finding practical problem solutions. ",
+            "I enjoy the feeling of promoting good work relationships. ",
+            "I can strongly influence decisions. ",
+            "I can meet people who may have something new. ",
+            "I can bring people to agree on the necessary measures. ",
+            "I feel in my element when I can concentrate fully on a task.. ",
+            "I like to look for areas where my imagination is required.",
+            "I can use my special qualifications to my advantage. "
         ]},
-        {desc: "Was geschieht, wenn ich plötzlich mit einer schwierigen Aufgabe, knappem Zeitrahmen und Leuten, die ich nicht kenne, konfrontiert werde?", statements: [
-            "Ich würde mich bestmöglich in die Aufgabe einarbeiten. ",
-            "Ich würde selbstständig eine Lösung erarbeiten und sie dann der Gruppe vorstellen. ",
-            "Ich bin bereit, mit der Person zusammenzuarbeiten, die den positivsten Ansatz aufzeigt.",
-            "Ich würde Mittel und Wege finden, die Aufgabe zu vereinfachen, indem ich herausfinde, was die verschiedenen Leute am besten dazu beitragen können. ",
-            "Mein natürliches Gespür für Dringlichkeit würde sicherstellen, dass wir den Zeitplan einhalten. ",
-            "Ich glaube, ich würde mich nicht aufregen und einen klaren Kopf bewahren. ",
-            "Ich würde trotz des Drucks beharrlich und zielstrebig weiterarbeiten. ",
-            "Ich wäre bereit, die Leitung zu übernehmen, wenn ich den Eindruck hätte, dass die Gruppe keinen Fortschritt macht. ",
-            "Ich würde Diskussionen anregen mit der Absicht, neue Gedanken zu stimulieren und etwas in Bewegung zu bringen."
+        {desc: "What happens when I suddenly be confronted with a difficult task, just a close time frame and people that I don't know?", statements: [
+            "I would get involved in the task as best as possible. ",
+            "I would work out a solution independently and then present it to the group. ",
+            "I am ready to work with the person who shows the most positive approach.",
+            "I would find means and ways to simplify the task by finding out what the different people can best contribute to it. ",
+            "My natural sense of urgency would make sure that we keep the schedule. ",
+            "I think I wouldn't get upset and keep a clear head. ",
+            "Despite the pressure, I would continue to work persistently and determined. ",
+            "I would be ready to take over the management if I had the impression that the group has no progress. ",
+            "I would stimulate discussions with the intention of stimulating new thoughts and getting something in motion."
         ]},
-        {desc: "Welche Probleme habe ich, wenn ich in einer Gruppe arbeite?", statements: [
-            "Ich neige dazu, denen gegenüber ungeduldig zu werden, die den Fortschritt behindern. ",
-            "Man wirft mir manchmal vor, ich sei zu analytisch. ",
-            "Mein Wunsch, sicherzustellen, dass die Arbeit richtig ausgeführt wird, hält manchmal den Fortschritt auf. ",
-            "Ich bin ziemlich schnell gelangweilt wenn mich anderer antreibt. ",
-            "Es fällt mir schwer anzufangen, solange die Ziele nicht klar sind. ",
-            "Mir fehlen manchmal die richtigen Worte, komplizierte Sachverhalte, die ich im Kopf habe, zu erläutern und zu klären. ",
-            "Es ist mir bewusst, dass ich von anderen Dinge verlange, die ich selbst nicht tun kann. ",
-            "Ich denke das ich Zeit verschwende und die Sache lieber alleine lösen würde. ",
-            "Ich zögere meine Ansichten vor schwierigen oder mächtigen Personen vorzutragen."
+        {desc: "What problems do I have when I work in a group?", statements: [
+            "I tend to become impatient to those who hinder progress. ",
+            "Sometimes I was accused of being too analytical. ",
+            "My desire to ensure that the work is carried out correctly sometimes stops progress. ",
+            "I am bored pretty quickly when others drive me. ",
+            "It is difficult for me to start as long as the goals are not clear. ",
+            "Sometimes I lack the right words to explain and clarify complicated facts that I have in my head. ",
+            "I am aware that I ask other things that I can't do myself. ",
+            "I think I would waste time and would rather solve the matter alone. ",
+            "I hesitate to present my views from difficult or powerful people."
         ]}
     ];
 
@@ -128,7 +128,7 @@
         }
 
         if (sum != 10) {
-            showHint($(`<strong>Summe der Punkte ist ${ sum } und nicht 10.</strong>`), 'danger');
+            showHint($(`<strong>the sum of the points is ${ sum } und nicht 10.</strong>`), 'danger');
         } else {
             current.result = result;
             advance();
@@ -156,19 +156,19 @@
         if (sum === 10) {
             const nextLabel = curArea === areas.length - 1 ? 'Zur Auswertung' : 'Zur nächsten Frage';
 
-            const el = $(`<span>Alle Punkte vergeben. <a href class="next-link alert-link">${ nextLabel }</a>.</span>`);
+            const el = $(`<span>All points awarded. <a href class="next-link alert-link">${ nextLabel }</a>.</span>`);
 
             el.find('.next-link').on('click', checkFieldsAndAdvance);
 
             showHint(el, 'success');
         } else
         if (sum === 0) {
-            showHint($(`<span>Verteile <strong>${ 10 - sum }</strong> Punkte auf zutreffende Aussagen.</span>`), 'warning');
+            showHint($(`<span>Distribute <strong>${ 10 - sum }</strong> Points for applicable statements.</span>`), 'warning');
         } else
         if (sum < 10) {
-            showHint($(`<span>Noch <strong>${ 10 - sum }</strong> freie${ 10 - sum === 1 ? 'r' : '' } Punkt${ 10 - sum === 1 ? '' : 'e' }.</span>`), 'warning');
+            showHint($(`<span>Still <strong>${ 10 - sum }</strong> freie${ 10 - sum === 1 ? 'r' : '' } Punkt${ 10 - sum === 1 ? '' : 'e' }.</span>`), 'warning');
         } else {
-            showHint($(`<span><strong>${ sum - 10 } Punkt${ sum - 10 !== 1 ? 'e' : '' }</strong> zu viel vergeben.</span>`), 'danger');
+            showHint($(`<span><strong>${ sum - 10 } Punkt${ sum - 10 !== 1 ? 'e' : '' }</strong> too many awarded</span>`), 'danger');
         }
     }
     
@@ -243,10 +243,10 @@
             return map;
         }, {});
 
-        $('#content h2').text('Zusammenfassung');
+        $('#content h2').text('Summary');
         $('#cbody').html(`
             <p>
-                Folgendes Profil ergibt sich auf Basis der Antworten:
+                The following profile emerges on the basis of the responses:
             </p>
             <ul class="summary"></ul>
         `);
